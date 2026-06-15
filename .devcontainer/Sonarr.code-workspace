@@ -2,12 +2,14 @@
 // the frontend has vscode settings that are distinct from the backend
 {
   "folders": [
-    {
-      "path": ".."
-    },
-    {
-      "path": "../frontend"
-    }
+    { "path": ".." },
+    { "path": "../frontend" }
   ],
-  "settings": {}
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/bin": true,
+      "**/obj": true
+    }
+  }
 }
